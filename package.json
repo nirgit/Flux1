@@ -1,0 +1,14 @@
+{
+  "name": "flux1",
+  "version": "0.0.1",
+  "description": "a flux tryout demo with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nir M",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "requirejs": "~2.1.16"
+  }
+}
