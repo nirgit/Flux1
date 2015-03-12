@@ -9,6 +9,7 @@
   "author": "Nir M",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "requirejs": "~2.1.16"
+    "requirejs": "~2.1.16",
+    "react": "~0.13.0"
   }
 }

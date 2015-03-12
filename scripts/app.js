@@ -1,7 +1,6 @@
-define([], function() {
+define(['react'], function(React) {
 	'use strict';
 
-	var el = document.createElement('div');
-	el.innerHTML = "[" + (new Date()) + "]" + "Hello Flux"
-	window.document.body.appendChild(el);
+	var main = document.getElementById('main');
+	React.render(React.createElement('h1', null, 'Hello FLUX'), main);
 });
