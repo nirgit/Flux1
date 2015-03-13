@@ -1,19 +1,14 @@
-define([], function() {
+define(['lodash'], function(_) {
 	'use strict';
 
-	var todoItems = [
-		'todo 1',
-		'todo 2',
-		'todo 3',
-		'todo 4',
-	];
+	var todoItems = [];
 
 	var changeCallbacks = [];
 
 	function updateListeners() {
-		for (var i = 0; i < changeCallbacks.length; i++) {
-			changeCallbacks[i](todoItems);
-		}
+		_.each(changeCallbacks, function(listener) {
+			listener(todoItems);
+		});
 	}
 
 	return {
@@ -29,7 +24,7 @@ define([], function() {
 
 				if (action === 'add') {
 					if (data) {
-						todoItems.push(data);
+						todoItems = todoItems.concat(data);
 					}
 					updateListeners();
 				} else if(action === 'remove') {
