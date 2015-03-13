@@ -1,7 +1,7 @@
 <div>
 	<label>
 		Add your Todo task
-		<input type="text" />
-		<button>Add</button>
+		<input type="text" valueLink={this.linkState('todoTask')} />
+		<button onClick={this.addTodo}>Add</button>
 	</label>
 </div>
