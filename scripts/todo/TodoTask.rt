@@ -1,0 +1,6 @@
+<div>
+	<label>
+		{this.props.message}
+		<button onClick="{this.removeTask}">x</button>
+	</label>
+</div>

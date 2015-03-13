@@ -1,10 +1,13 @@
 <rt-require dependency="todo/TodoBar" as="TodoBar"/>
+<rt-require dependency="todo/TodoTask" as="TodoTask"/>
 
 <div>
 	My Todo List
 	<TodoBar/>
 	<hr/>
 	<ul>
-		<li rt-repeat="item in this.state.todoList">{item}</li>
+		<li rt-repeat="item in this.state.todoList">
+			<TodoTask id="{itemIndex}" message="{item}"/>
+		</li>
 	</ul>
 </div>
