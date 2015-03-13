@@ -1,4 +1,4 @@
-define(['react', 'todo/TodoStore'], function(React, TodoStore) {
+define(['react', 'stores/TodoStore'], function(React, TodoStore) {
 	'use strict';
 
 	return React.createClass({

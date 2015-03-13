@@ -1,16 +1,20 @@
 define([], function() {
 	'use strict';
 
+	var ACTION_TYPE = 'todo';
+
 	function createAddAction(data) {
 		return {
-			type: 'addTodo',
+			type: ACTION_TYPE,
+			action: 'add',
 			data: data
 		};
 	}
 
 	function createRemoveAction(index) {
 		return {
-			type: 'removeTodo',
+			type: ACTION_TYPE,
+			action: 'remove',
 			data: index
 		};
 	}
