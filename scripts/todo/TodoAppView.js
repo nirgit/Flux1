@@ -1,4 +1,4 @@
-define(['react', 'stores/TodoStore'], function(React, TodoStore) {
+define(['react', 'stores/TodoStore', 'todo/TodoAppView.rt'], function(React, TodoStore, template) {
 	'use strict';
 
 	return React.createClass({
@@ -14,8 +14,6 @@ define(['react', 'stores/TodoStore'], function(React, TodoStore) {
 				$this.setState({todoList: data});
 			});
 		},
-		render: function() {
-			return React.createElement('div', null, this.state.todoList);
-		}
+		render: template
 	});
 });

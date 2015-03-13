@@ -11,6 +11,11 @@ requirejs.config({
     	"lodash": {
     		"exports": "_"
     	}
+    },
+    map: {
+        '*': {
+            'react/addons': 'react'
+        }
     }
 });
 

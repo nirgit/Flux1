@@ -1,0 +1,7 @@
+<div>
+	My Todo List
+	<hr/>
+	<ul>
+		<li rt-repeat="item in this.state.todoList">{item}</li>
+	</ul>
+</div>
