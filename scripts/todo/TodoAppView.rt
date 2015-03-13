@@ -2,7 +2,7 @@
 <rt-require dependency="todo/TodoTask" as="TodoTask"/>
 
 <div>
-	My Todo List
+	<h1>My Todo List</h1>
 	<TodoBar/>
 	<hr/>
 	<ul>

@@ -12,7 +12,7 @@ define([
         }));
     }
     return function () {
-        return React.createElement('div', {}, '\n\tMy Todo List\n\t', React.createElement(TodoBar, {}), React.createElement('hr', {}), React.createElement.apply(this, _.flatten([
+        return React.createElement('div', {}, React.createElement('h1', {}, 'My Todo List'), React.createElement(TodoBar, {}), React.createElement('hr', {}), React.createElement.apply(this, _.flatten([
             'ul',
             {},
             _.map(this.state.todoList, repeatItem1.bind(this))
