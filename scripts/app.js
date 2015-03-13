@@ -1,6 +1,6 @@
-define(['react'], function(React) {
+define(['react', 'todo/TodoAppView'], function(React, todoApp) {
 	'use strict';
 
 	var main = document.getElementById('main');
-	React.render(React.createElement('h1', null, 'Hello FLUX'), main);
+	React.render(React.createElement(todoApp, null), main);
 });
