@@ -1,7 +1,12 @@
 define([], function() {
 	'use strict';
 
-	var todoItems = [];
+	var todoItems = [
+		'todo 1',
+		'todo 2',
+		'todo 3',
+		'todo 4',
+	];
 
 	var changeCallbacks = [];
 
@@ -23,7 +28,9 @@ define([], function() {
 				var data = dispatchedData.data;
 
 				if (action === 'add') {
-					todoItems.push(data);
+					if (data) {
+						todoItems.push(data);
+					}
 					updateListeners();
 				} else if(action === 'remove') {
 					todoItems.splice(data, 1);

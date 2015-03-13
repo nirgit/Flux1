@@ -1,10 +1,21 @@
-define(['react'], function(React) {
+define(['react', 'todo/TodoStore'], function(React, TodoStore) {
 	'use strict';
 
 	return React.createClass({
 		displayName: 'TodoAppView',
+		getInitialState: function() {
+			return {
+				todoList: null
+			};
+		},
+		componentWillMount: function() {
+			var $this = this;
+			TodoStore.registerForChange(function(data) {
+				$this.setState({todoList: data});
+			});
+		},
 		render: function() {
-			return React.createElement('div', null, ['todo1', 'todo2', 'todo3']);
+			return React.createElement('div', null, this.state.todoList);
 		}
 	});
 });
