@@ -1,8 +1,10 @@
-define(['react', 'todo/TodoAppView', 'dispatcher/dispatcher'], function(React, todoApp, dispatcher) {
+define(['react', 'todo/TodoAppView', 
+	'dispatcher/dispatcher', 'actions/TodoActions'], function(React, todoApp, dispatcher, todoActions) {
 	'use strict';
 
 	var main = document.getElementById('main');
 	React.render(React.createElement(todoApp, null), main);
 
-	dispatcher.dispatch({type: 'addTodo', data: ['First Todo task']});
+	var addAction = todoActions.createAddAction(['First Todo task']);
+	dispatcher.dispatch(addAction);
 });
