@@ -1,0 +1,4 @@
+run the following line to compile all RTs
+==========================================
+
+rt -m=amd scripts/**/*.rt
