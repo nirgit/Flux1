@@ -9,9 +9,12 @@ define(['react', 'dispatcher/dispatcher', 'actions/TodoActions',
 			};
 		},
 		addTodo: function() {
-			var action = TodoActions.createAddAction(this.state.todoTask);
-			dispatcher.dispatch(action);
-			this.setState({todoTask: null});
+			if (!!this.state.todoTask) {
+				var action = TodoActions.createAddAction(this.state.todoTask);
+				dispatcher.dispatch(action);
+				this.setState({todoTask: null});
+			}
+			this.refs.todoDescription.getDOMNode().focus();
 		},
 		render: template
 	});
