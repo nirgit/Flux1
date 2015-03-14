@@ -4,7 +4,7 @@ define([
 ], function (React, _) {
     'use strict';
     return function () {
-        return React.createElement('div', {}, React.createElement('label', {}, '\n\t\tAdd your Todo task\n\t\t', React.createElement('input', {
+        return React.createElement('div', { 'className': 'app-todo-bar' }, React.createElement('label', {}, '\n\t\tAdd your Todo task\n\t\t', React.createElement('input', {
             'ref': 'todoDescription',
             'type': 'text',
             'valueLink': this.linkState('todoTask')

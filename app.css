@@ -1,0 +1,43 @@
+ul {
+	list-style: none;
+}
+
+.app-title {
+	text-align: center;
+	color: sienna;
+	font-size: 2.5em;
+}
+
+.app-todo-bar {
+	line-height: 50px;
+	text-align: center;
+	margin: 10px auto;
+	background-color: aliceblue;
+	font-size: 1.5em;
+}
+
+.todo-task {
+	border: 2px solid sienna;
+	border-radius: 5px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px auto;
+	width: 500px;
+	overflow: hidden;
+	position: relative;
+	line-height: 30px;
+}
+
+.todo-task-remove-button {
+	background-color: white;
+	right: 5px;
+	position: absolute;
+	border-radius: 20px;
+	border: 1px solid brown;
+	width: 30px;
+	height: 30px;
+}
+
+.todo-task-remove-button:hover {
+	background-color: pink;
+}

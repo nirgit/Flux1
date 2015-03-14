@@ -1,4 +1,4 @@
-<div>
+<div class='app-todo-bar'>
 	<label>
 		Add your Todo task
 		<input ref='todoDescription' type="text" valueLink={this.linkState('todoTask')} />

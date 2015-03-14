@@ -1,6 +1,6 @@
-<div>
+<div class='todo-task'>
 	<label>
 		{this.props.message}
-		<button onClick="{this.removeTask}">x</button>
+		<button class='todo-task-remove-button' onClick="{this.removeTask}">x</button>
 	</label>
 </div>

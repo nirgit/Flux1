@@ -18,7 +18,8 @@ define(['lodash'], function(_) {
 			}
 		},
 		dispatch: function(dispatchedData) {
-			if (dispatchedData && dispatchedData.data) {
+			if (dispatchedData && 
+				dispatchedData.data !== null && dispatchedData.data !== undefined) {
 				var action = dispatchedData.action.toLowerCase();
 				var data = dispatchedData.data;
 
