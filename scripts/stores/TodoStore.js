@@ -18,19 +18,16 @@ define(['lodash'], function(_) {
 			}
 		},
 		dispatch: function(dispatchedData) {
-			if (dispatchedData) {
+			if (dispatchedData && dispatchedData.data) {
 				var action = dispatchedData.action.toLowerCase();
 				var data = dispatchedData.data;
 
-				if (action === 'add') {
-					if (data) {
-						todoItems = todoItems.concat(data);
-					}
-					updateListeners();
+				if (action === 'add') {				
+					todoItems = todoItems.concat(data);
 				} else if(action === 'remove') {
 					todoItems.splice(data, 1);
-					updateListeners();
 				}
+				updateListeners();
 			}
 		}
 	};
