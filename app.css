@@ -39,5 +39,6 @@ ul {
 }
 
 .todo-task-remove-button:hover {
-	background-color: pink;
+	background-color: lightpink;
+	cursor: pointer;
 }
