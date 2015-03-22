@@ -1,0 +1,22 @@
+{
+  "name": "flux1",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nirgit/Flux1",
+  "authors": [
+    "Nir Moav <nirm@wix.com>"
+  ],
+  "description": "a mini-app implementing Flux using React",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.5.0",
+    "react": "~0.13.1"
+  }
+}

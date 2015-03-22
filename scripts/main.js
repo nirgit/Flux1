@@ -1,8 +1,8 @@
 requirejs.config({
     baseUrl: "./scripts",
     paths: {
-    	"react": "../node_modules/react/dist/react-with-addons.min",
-    	"lodash": "../lib/lodash.min"
+    	"react": "../bower_components/react/react-with-addons.min",
+    	"lodash": "../bower_components/lodash/lodash.min"
     },
     shim: {
     	"react": {
